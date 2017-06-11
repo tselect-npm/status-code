@@ -1,6 +1,5 @@
 {
   "name": "@bluejay/status-code",
-  "types": "status-code.d.ts",
   "scripts": {
     "test": "mocha --require ./test/setup.js ./test/**/*.test.js"
   },
