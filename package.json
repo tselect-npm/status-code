@@ -4,7 +4,7 @@
     "test": "mocha --require ./test/setup.js ./test/**/*.test.js"
   },
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "description": "HTTP status codes utility.",
   "repository": {
