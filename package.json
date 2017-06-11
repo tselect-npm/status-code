@@ -1,0 +1,37 @@
+{
+  "name": "@bluejay/status-code",
+  "types": "status-code.d.ts",
+  "scripts": {
+    "test": "mocha --require ./test/setup.js ./test/**/*.test.js"
+  },
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "HTTP status codes utility.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluebirds-blue-jay/status-code.git"
+  },
+  "keywords": [
+    "bluejay",
+    "http",
+    "rest",
+    "statuscode",
+    "code"
+  ],
+  "author": "Sylvain Estevez",
+  "bugs": {
+    "url": "https://github.com/bluebirds-blue-jay/status-code/issues"
+  },
+  "homepage": "https://github.com/bluebirds-blue-jay/status-code#readme",
+  "dependencies": {
+    "@types/node": "^7.0.29",
+    "typescript": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^2.2.41",
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
