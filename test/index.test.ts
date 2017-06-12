@@ -1,4 +1,4 @@
-import { StatusCode } from '../src';
+import * as StatusCode from '../src';
 
 describe('StatusCode', function () {
   describe('.is1xx()', function () {
