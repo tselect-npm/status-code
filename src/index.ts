@@ -1,5 +1,2 @@
-import * as _StatusCode from './status-code';
-
+export * from './types';
 export * from './status-code';
-export const StatusCode = _StatusCode;
-export default StatusCode;

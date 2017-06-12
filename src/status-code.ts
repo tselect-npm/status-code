@@ -1,42 +1,4 @@
-export type TCode =
-  100 |
-  101 |
-  200 |
-  201 |
-  202 |
-  203 |
-  204 |
-  205 |
-  206 |
-  300 |
-  301 |
-  302 |
-  303 |
-  304 |
-  305 |
-  400 |
-  401 |
-  402 |
-  403 |
-  404 |
-  405 |
-  406 |
-  407 |
-  408 |
-  409 |
-  410 |
-  412 |
-  413 |
-  414 |
-  415 |
-  416 |
-  417 |
-  500 |
-  501 |
-  502 |
-  503 |
-  504 |
-  505;
+import { TCode } from './types';
 
 const stringMap = {
   100: 'CONTINUE',
@@ -80,45 +42,45 @@ const stringMap = {
   505: 'HTTP_VERSION_NOT_SUPPORTED',
 };
 
-export const CONTINUE = 100;
-export const SWITCHING_PROTOCOLS = 101;
-export const OK = 200;
-export const CREATED = 201;
-export const ACCEPTED = 202;
-export const NON_AUTHORITATIVE_INFORMATION = 203;
-export const NO_CONTENT = 204;
-export const RESET_CONTENT = 205;
-export const PARTIAL_CONTENT = 206;
-export const MULTIPLE_CHOICES = 300;
-export const MOVED_PERMANENTLY = 301;
-export const MOVED_TEMPORARILY = 302;
-export const SEE_OTHER = 303;
-export const NOT_MODIFIED = 304;
-export const USE_PROXY = 305;
-export const BAD_REQUEST = 400;
-export const UNAUTHORIZED = 401;
-export const PAYMENT_REQUIRED = 402;
-export const FORBIDDEN = 403;
-export const NOT_FOUND = 404;
-export const METHOD_NOT_ALLOWED = 405;
-export const NOT_ACCEPTABLE = 406;
-export const PROXY_AUTHENTICATION_REQUIRED = 407;
-export const REQUEST_TIME_OUT = 408;
-export const CONFLICT = 409;
-export const GONE = 410;
-export const LENGTH_REQUIRED = 411;
-export const PRECONDITION_FAILED = 412;
-export const REQUEST_ENTITY_TOO_LARGE = 413;
-export const REQUEST_URI_TOO_LONG = 414;
-export const UNSUPPORTED_MEDIA_TYPE = 415;
-export const REQUEST_RANGE_UNSATISFIABLE = 416;
-export const EXPECTATION_FAILED = 417;
-export const INTERNAL_SERVER_ERROR = 500;
-export const NOT_IMPLEMENTED = 501;
-export const BAD_GATEWAY = 502;
-export const SERVICE_UNAVAILABLE = 503;
-export const GATEWAY_TIME_OUT = 504;
-export const HTTP_VERSION_NOT_SUPPORTED = 505;
+export const CONTINUE: TCode = 100;
+export const SWITCHING_PROTOCOLS: TCode = 101;
+export const OK: TCode = 200;
+export const CREATED: TCode = 201;
+export const ACCEPTED: TCode = 202;
+export const NON_AUTHORITATIVE_INFORMATION: TCode = 203;
+export const NO_CONTENT: TCode = 204;
+export const RESET_CONTENT: TCode = 205;
+export const PARTIAL_CONTENT: TCode = 206;
+export const MULTIPLE_CHOICES: TCode = 300;
+export const MOVED_PERMANENTLY: TCode = 301;
+export const MOVED_TEMPORARILY: TCode = 302;
+export const SEE_OTHER: TCode = 303;
+export const NOT_MODIFIED: TCode = 304;
+export const USE_PROXY: TCode = 305;
+export const BAD_REQUEST: TCode = 400;
+export const UNAUTHORIZED: TCode = 401;
+export const PAYMENT_REQUIRED: TCode = 402;
+export const FORBIDDEN: TCode = 403;
+export const NOT_FOUND: TCode = 404;
+export const METHOD_NOT_ALLOWED: TCode = 405;
+export const NOT_ACCEPTABLE: TCode = 406;
+export const PROXY_AUTHENTICATION_REQUIRED: TCode = 407;
+export const REQUEST_TIME_OUT: TCode = 408;
+export const CONFLICT: TCode = 409;
+export const GONE: TCode = 410;
+export const LENGTH_REQUIRED: TCode = 411;
+export const PRECONDITION_FAILED: TCode = 412;
+export const REQUEST_ENTITY_TOO_LARGE: TCode = 413;
+export const REQUEST_URI_TOO_LONG: TCode = 414;
+export const UNSUPPORTED_MEDIA_TYPE: TCode = 415;
+export const REQUEST_RANGE_UNSATISFIABLE: TCode = 416;
+export const EXPECTATION_FAILED: TCode = 417;
+export const INTERNAL_SERVER_ERROR: TCode = 500;
+export const NOT_IMPLEMENTED: TCode = 501;
+export const BAD_GATEWAY: TCode = 502;
+export const SERVICE_UNAVAILABLE: TCode = 503;
+export const GATEWAY_TIME_OUT: TCode = 504;
+export const HTTP_VERSION_NOT_SUPPORTED: TCode = 505;
 
 function isXXX(code: TCode, intChar: string): boolean {
   return isStatusCode(code) && code.toString().charAt(0) === intChar;
