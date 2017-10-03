@@ -7,7 +7,7 @@
   },
   "license": "MIT",
   "version": "2.1.0",
-  "main": "src/index.js",
+  "main": "index.js",
   "description": "HTTP status codes utility.",
   "repository": {
     "type": "git",
