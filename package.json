@@ -1,11 +1,13 @@
 {
   "name": "@bluejay/status-code",
   "scripts": {
-    "test": "mocha --require ./test/setup.js ./test/**/*.test.js"
+    "test": "mocha --require ./test/setup.js ./test/**/*.test.js",
+    "docs": "node_modules/.bin/typedoc --mode file --out docs",
+    "prepublish": "tsc && npm run docs"
   },
   "license": "MIT",
   "version": "1.0.3",
-  "main": "index.js",
+  "main": "src/index.js",
   "description": "HTTP status codes utility.",
   "repository": {
     "type": "git",
@@ -31,6 +33,8 @@
     "@types/chai": "^4.0.0",
     "@types/mocha": "^2.2.41",
     "chai": "^4.0.2",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "typedoc": "^0.8.0",
+    "typedoc-plugin-markdown": "^1.0.10"
   }
 }
