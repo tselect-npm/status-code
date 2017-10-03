@@ -1,4 +1,4 @@
-export type TCode =
+export type TStatusCode =
   100 |
   101 |
   200 |

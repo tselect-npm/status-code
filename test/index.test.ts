@@ -70,36 +70,48 @@ describe('StatusCode', function () {
     });
   });
 
-  describe('.isErrorCode()', function () {
+  describe('.isErrorStatusCode()', function () {
     it('should return true', function () {
-      expect(StatusCode.isErrorCode(StatusCode.CONFLICT)).to.equal(true);
+      expect(StatusCode.isErrorStatusCode(StatusCode.CONFLICT)).to.equal(true);
     });
     it('should return false', function () {
-      expect(StatusCode.isErrorCode(StatusCode.OK)).to.equal(false);
+      expect(StatusCode.isErrorStatusCode(StatusCode.OK)).to.equal(false);
     });
     it('should return false (not a status code)', function () {
-      expect(StatusCode.isErrorCode(<any>4000)).to.equal(false);
+      expect(StatusCode.isErrorStatusCode(<any>4000)).to.equal(false);
     });
   });
 
-  describe('.isServerErrorCode()', function () {
+  describe('.isNonErrorStatusCode()', function () {
     it('should return true', function () {
-      expect(StatusCode.isServerErrorCode(StatusCode.INTERNAL_SERVER_ERROR)).to.equal(true);
+      expect(StatusCode.isNonErrorStatusCode(StatusCode.OK)).to.equal(true);
     });
     it('should return false', function () {
-      expect(StatusCode.isServerErrorCode(StatusCode.CONFLICT)).to.equal(false);
+      expect(StatusCode.isNonErrorStatusCode(StatusCode.BAD_REQUEST)).to.equal(false);
     });
     it('should return false (not a status code)', function () {
-      expect(StatusCode.isServerErrorCode(<any>5000)).to.equal(false);
+      expect(StatusCode.isNonErrorStatusCode(<any>4000)).to.equal(false);
     });
   });
 
-  describe('.isConsumerErrorCode()', function () {
+  describe('.isServerErrorStatusCode()', function () {
     it('should return true', function () {
-      expect(StatusCode.isConsumerErrorCode(StatusCode.CONFLICT)).to.equal(true);
+      expect(StatusCode.isServerErrorStatusCode(StatusCode.INTERNAL_SERVER_ERROR)).to.equal(true);
     });
     it('should return false', function () {
-      expect(StatusCode.isConsumerErrorCode(StatusCode.INTERNAL_SERVER_ERROR)).to.equal(false);
+      expect(StatusCode.isServerErrorStatusCode(StatusCode.CONFLICT)).to.equal(false);
+    });
+    it('should return false (not a status code)', function () {
+      expect(StatusCode.isServerErrorStatusCode(<any>5000)).to.equal(false);
+    });
+  });
+
+  describe('.isConsumerErrorStatusCode()', function () {
+    it('should return true', function () {
+      expect(StatusCode.isConsumerErrorStatusCode(StatusCode.CONFLICT)).to.equal(true);
+    });
+    it('should return false', function () {
+      expect(StatusCode.isConsumerErrorStatusCode(StatusCode.INTERNAL_SERVER_ERROR)).to.equal(false);
     });
   });
 
