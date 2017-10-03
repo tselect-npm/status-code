@@ -13,17 +13,22 @@ Enums and utilities around status codes.
 
 ## Usage
 
-### Importing this module
-
-
-
 ```typescript
 import * as StatusCode from '@bluejay/status-code';
 
-StatusCode.is5xx(StatusCode.BAD_REQUEST); // false
-StatusCode.BAD_REQUEST; // 400
+StatusCode.OK; // 200
 ```
+
+Alternatively, you can use the named export.
+
+```typescript
+import { StatusCode } from '@bluejay/status-code';
+
+StatusCode.OK; // 200
+```
+
+
 
 ## Documentation
 
-See https://bluebirds-blue-jay.github.io/status-code/.
+See [Github Pages](https://bluebirds-blue-jay.github.io/status-code/).
