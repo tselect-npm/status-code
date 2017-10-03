@@ -3,7 +3,7 @@
   "scripts": {
     "test": "mocha --require ./test/setup.js ./test/**/*.test.js",
     "docs": "node_modules/.bin/typedoc --mode file --out docs",
-    "prepublish": "tsc && npm run docs"
+    "prepublish": "tsc"
   },
   "license": "MIT",
   "version": "1.0.3",
