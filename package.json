@@ -32,8 +32,8 @@
   "devDependencies": {
     "@types/chai": "^4.0.4",
     "@types/mocha": "^2.2.43",
-    "chai": "^4.0.2",
-    "mocha": "^3.4.2",
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
     "typedoc": "^0.8.0",
     "typedoc-plugin-markdown": "^1.0.10"
   }
