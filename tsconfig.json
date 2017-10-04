@@ -8,7 +8,8 @@
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "suppressImplicitAnyIndexErrors": true,
-    "inlineSourceMap": true
+    "inlineSourceMap": true,
+    "types": ["mocha", "node"]
   },
   "exclude": [
     "node_modules",

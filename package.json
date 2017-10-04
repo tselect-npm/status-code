@@ -30,8 +30,8 @@
     "typescript": "^2.3.4"
   },
   "devDependencies": {
-    "@types/chai": "^4.0.0",
-    "@types/mocha": "^2.2.41",
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.43",
     "chai": "^4.0.2",
     "mocha": "^3.4.2",
     "typedoc": "^0.8.0",
