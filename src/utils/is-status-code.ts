@@ -1,6 +1,5 @@
-import { map } from '../misc/map';
-import { TStatusCode } from '../types/status-code';
+import { StatusCode } from '../constants/status-code';
 
-export function isStatusCode(value: any): value is TStatusCode {
-  return map.has(value);
+export function isStatusCode(value: any): value is StatusCode {
+  return Object.values(StatusCode).includes(value);
 }

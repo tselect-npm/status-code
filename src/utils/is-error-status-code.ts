@@ -1,6 +1,6 @@
-import { TStatusCode } from '../types/status-code';
 import { isStatusCode } from './is-status-code';
+import { StatusCode } from '../constants/status-code';
 
-export function isErrorStatusCode(code: TStatusCode): boolean {
+export function isErrorStatusCode(code: StatusCode): boolean {
   return isStatusCode(code) && code >= 400;
 }

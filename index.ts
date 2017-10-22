@@ -1,4 +1,12 @@
-import * as StatusCode from './src';
-
-export * from './src';
-export { StatusCode };
+export { isStatusCode } from './src/utils/is-status-code';
+export { is5xx } from './src/utils/is-5xx';
+export { is4xx } from './src/utils/is-4xx';
+export { is1xx } from './src/utils/is-1xx';
+export { is2xx } from './src/utils/is-2xx';
+export { is3xx } from './src/utils/is-3xx';
+export { isErrorStatusCode } from './src/utils/is-error-status-code';
+export { isNonErrorStatusCode } from './src/utils/is-non-error-status-code';
+export { toString } from './src/utils/to-string';
+export { isServerErrorStatusCode } from './src/utils/is-server-error-status-code';
+export { isConsumerErrorStatusCode } from './src/utils/is-consumer-error-status-code';
+export { StatusCode } from './src/constants/status-code';

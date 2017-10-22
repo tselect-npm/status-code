@@ -38,8 +38,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
 							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
@@ -72,16 +70,13 @@
 					<li><code>typescript &gt;= 2.4</code></li>
 				</ul>
 				<h2 id="installation">Installation</h2>
-				<p><code>npm i @bluejay/status-code [--save]</code></p>
+				<p><code>npm i @bluejay/status-code</code></p>
 				<h2 id="usage">Usage</h2>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> StatusCode <span class="hljs-keyword">from</span> <span class="hljs-string">'@bluejay/status-code'</span>;
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { StatusCode, isStatusCode, is5xx } <span class="hljs-keyword">from</span> <span class="hljs-string">'@bluejay/status-code'</span>;
 
 StatusCode.OK; <span class="hljs-comment">// 200</span>
-</code></pre>
-				<p>Alternatively, you can use the named export.</p>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { StatusCode } <span class="hljs-keyword">from</span> <span class="hljs-string">'@bluejay/status-code'</span>;
-
-StatusCode.OK; <span class="hljs-comment">// 200</span>
+isStatusCode(<span class="hljs-number">200</span>); <span class="hljs-comment">// true</span>
+is5xx(StatusCode.INTERNAL_SERVER_ERROR); <span class="hljs-comment">// true</span>
 </code></pre>
 				<h2 id="documentation">Documentation</h2>
 				<p>See <a href="https://bluebirds-blue-jay.github.io/status-code/">Github Pages</a>.</p>
@@ -97,128 +92,8 @@ StatusCode.OK; <span class="hljs-comment">// 200</span>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#tstatuscode" class="tsd-kind-icon">TStatus<wbr>Code</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#accepted" class="tsd-kind-icon">ACCEPTED</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#bad_gateway" class="tsd-kind-icon">BAD_<wbr>GATEWAY</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#bad_request" class="tsd-kind-icon">BAD_<wbr>REQUEST</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#conflict" class="tsd-kind-icon">CONFLICT</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#continue" class="tsd-kind-icon">CONTINUE</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#created" class="tsd-kind-icon">CREATED</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#expectation_failed" class="tsd-kind-icon">EXPECTATION_<wbr>FAILED</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#forbidden" class="tsd-kind-icon">FORBIDDEN</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#gateway_time_out" class="tsd-kind-icon">GATEWAY_<wbr>TIME_<wbr>OUT</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#gone" class="tsd-kind-icon">GONE</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#http_version_not_supported" class="tsd-kind-icon">HTTP_<wbr>VERSION_<wbr>NOT_<wbr>SUPPORTED</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#internal_server_error" class="tsd-kind-icon">INTERNAL_<wbr>SERVER_<wbr>ERROR</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#length_required" class="tsd-kind-icon">LENGTH_<wbr>REQUIRED</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#method_not_allowed" class="tsd-kind-icon">METHOD_<wbr>NOT_<wbr>ALLOWED</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#moved_permanently" class="tsd-kind-icon">MOVED_<wbr>PERMANENTLY</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#moved_temporarily" class="tsd-kind-icon">MOVED_<wbr>TEMPORARILY</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#multiple_choices" class="tsd-kind-icon">MULTIPLE_<wbr>CHOICES</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#non_authoritative_information" class="tsd-kind-icon">NON_<wbr>AUTHORITATIVE_<wbr>INFORMATION</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#not_acceptable" class="tsd-kind-icon">NOT_<wbr>ACCEPTABLE</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#not_found" class="tsd-kind-icon">NOT_<wbr>FOUND</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#not_implemented" class="tsd-kind-icon">NOT_<wbr>IMPLEMENTED</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#not_modified" class="tsd-kind-icon">NOT_<wbr>MODIFIED</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#no_content" class="tsd-kind-icon">NO_<wbr>CONTENT</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#ok" class="tsd-kind-icon">OK</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#partial_content" class="tsd-kind-icon">PARTIAL_<wbr>CONTENT</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#payment_required" class="tsd-kind-icon">PAYMENT_<wbr>REQUIRED</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#precondition_failed" class="tsd-kind-icon">PRECONDITION_<wbr>FAILED</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#proxy_authentication_required" class="tsd-kind-icon">PROXY_<wbr>AUTHENTICATION_<wbr>REQUIRED</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#request_entity_too_large" class="tsd-kind-icon">REQUEST_<wbr>ENTITY_<wbr>TOO_<wbr>LARGE</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#request_range_unsatisfiable" class="tsd-kind-icon">REQUEST_<wbr>RANGE_<wbr>UNSATISFIABLE</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#request_time_out" class="tsd-kind-icon">REQUEST_<wbr>TIME_<wbr>OUT</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#request_uri_too_long" class="tsd-kind-icon">REQUEST_<wbr>URI_<wbr>TOO_<wbr>LONG</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#reset_content" class="tsd-kind-icon">RESET_<wbr>CONTENT</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#see_other" class="tsd-kind-icon">SEE_<wbr>OTHER</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#service_unavailable" class="tsd-kind-icon">SERVICE_<wbr>UNAVAILABLE</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#switching_protocols" class="tsd-kind-icon">SWITCHING_<wbr>PROTOCOLS</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#unauthorized" class="tsd-kind-icon">UNAUTHORIZED</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#unsupported_media_type" class="tsd-kind-icon">UNSUPPORTED_<wbr>MEDIA_<wbr>TYPE</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#use_proxy" class="tsd-kind-icon">USE_<wbr>PROXY</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external">
-						<a href="globals.html#map" class="tsd-kind-icon">map</a>
+					<li class=" tsd-kind-enum">
+						<a href="enums/statuscode.html" class="tsd-kind-icon">Status<wbr>Code</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#is1xx" class="tsd-kind-icon">is1xx</a>
@@ -250,7 +125,7 @@ StatusCode.OK; <span class="hljs-comment">// 200</span>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#isstatuscode" class="tsd-kind-icon">is<wbr>Status<wbr>Code</a>
 					</li>
-					<li class=" tsd-kind-function tsd-is-external">
+					<li class=" tsd-kind-function">
 						<a href="globals.html#isxxx" class="tsd-kind-icon">isXXX</a>
 					</li>
 					<li class=" tsd-kind-function">

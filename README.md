@@ -9,24 +9,17 @@ Enums and utilities around status codes.
 
 ## Installation
 
-`npm i @bluejay/status-code [--save]`
+`npm i @bluejay/status-code`
 
 ## Usage
 
 ```typescript
-import * as StatusCode from '@bluejay/status-code';
+import { StatusCode, isStatusCode, is5xx } from '@bluejay/status-code';
 
 StatusCode.OK; // 200
+isStatusCode(200); // true
+is5xx(StatusCode.INTERNAL_SERVER_ERROR); // true
 ```
-
-Alternatively, you can use the named export.
-
-```typescript
-import { StatusCode } from '@bluejay/status-code';
-
-StatusCode.OK; // 200
-```
-
 
 
 ## Documentation
