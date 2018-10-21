@@ -6,7 +6,7 @@
     "prepublish": "rm -rf dts && tsc && tsc --outDir dts -d"
   },
   "license": "MIT",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "index.js",
   "description": "HTTP status codes utility.",
   "repository": {
