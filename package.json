@@ -32,8 +32,8 @@
     "@types/mocha": "^2.2.43",
     "@types/node": "^8.0.46",
     "chai": "^4.1.2",
-    "mocha": "^3.5.3",
-    "typedoc": "^0.8.0",
+    "mocha": "6.0.2",
+    "typedoc": "0.14.2",
     "typedoc-plugin-markdown": "^1.0.10",
     "typescript": "^2.5.3"
   }
