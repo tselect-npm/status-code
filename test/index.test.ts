@@ -13,7 +13,7 @@ import {
   isErrorStatusCode,
   isStatusCode,
   toString
-} from '../';
+} from '../src';
 
 describe('StatusCode', function () {
   describe('.is1xx()', function () {
