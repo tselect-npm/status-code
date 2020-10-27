@@ -2,7 +2,7 @@ docs/
 test/
 node_modules/
 .idea/
-*.ts
-!dts/**/*.d.ts
-dts/**/*.js
 tsconfig.json
+*.ts
+!dist/**/*.d.ts
+dist/**/*.js
