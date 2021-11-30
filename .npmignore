@@ -5,4 +5,5 @@ node_modules/
 tsconfig.json
 *.ts
 !dist/**/*.d.ts
-dist/**/*.js
+!dist/**/*.js
+.nyc_output/
