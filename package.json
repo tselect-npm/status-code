@@ -1,5 +1,5 @@
 {
-  "name": "@bluejay/status-code",
+  "name": "@normality/status-code",
   "scripts": {
     "docs": "./node_modules/.bin/typedoc --out docs --mode file --excludePrivate --excludeExternals ./src/index.ts",
     "test": "mocha",
@@ -30,9 +30,9 @@
   ],
   "author": "Sylvain Estevez",
   "bugs": {
-    "url": "https://github.com/bluebirds-blue-jay/status-code/issues"
+    "url": "https://github.com/SylvainEstevez/status-code"
   },
-  "homepage": "https://github.com/bluebirds-blue-jay/status-code#readme",
+  "homepage": "https://github.com/SylvainEstevez/status-code#readme",
   "dependencies": {},
   "devDependencies": {
     "@types/chai": "^4.2.12",

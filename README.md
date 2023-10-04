@@ -16,19 +16,14 @@ Enums and utilities around status codes.
 
 ## Installation
 
-`npm i @bluejay/status-code`
+`npm i @normality/status-code`
 
 ## Usage
 
 ```typescript
-import { StatusCode, isStatusCode, is5xx } from '@bluejay/status-code';
+import { StatusCode, isStatusCode, is5xx } from '@normality/status-code';
 
 StatusCode.OK; // 200
 isStatusCode(200); // true
 is5xx(StatusCode.INTERNAL_SERVER_ERROR); // true
 ```
-
-
-## Documentation
-
-See [Github Pages](https://bluebirds-blue-jay.github.io/status-code/).
