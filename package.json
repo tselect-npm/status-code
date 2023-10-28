@@ -17,7 +17,7 @@
   "description": "HTTP status codes utility.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bluebirds-blue-jay/status-code.git"
+    "url": "git+https://github.com/tselect-npm/status-code.git"
   },
   "keywords": [
     "tselect",
