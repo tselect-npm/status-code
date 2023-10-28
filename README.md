@@ -1,27 +1,19 @@
 # StatusCode
 
-[![npm](https://img.shields.io/npm/v/@bluejay/status-code.svg?style=flat-square)](https://www.npmjs.com/package/@bluejay/status-code)
- [![npm](https://img.shields.io/npm/dm/@bluejay/status-code.svg?style=flat-square)](https://www.npmjs.com/package/@bluejay/status-code)
-[![npm](https://img.shields.io/npm/l/@bluejay/status-code.svg?style=flat-square)](https://www.npmjs.com/package/@bluejay/status-code)
+[![npm](https://img.shields.io/npm/v/@tselect/status-code.svg?style=flat-square)](https://www.npmjs.com/package/@tselect/status-code)
+ [![npm](https://img.shields.io/npm/dm/@tselect/status-code.svg?style=flat-square)](https://www.npmjs.com/package/@tselect/status-code)
+[![npm](https://img.shields.io/npm/l/@tselect/status-code.svg?style=flat-square)](https://www.npmjs.com/package/@tselect/status-code)
 
 Enums and utilities around status codes.
 
-## Requirements
-
-- `node >= 8.6`, tested with:
- - `node@8.6.0`
- - `node@12.8.1`
-- `typescript >= 4.0`, tested with:
- - `typescript@4.0.2`
-
 ## Installation
 
-`npm i @normality/status-code`
+`npm i @tselect/status-code`
 
 ## Usage
 
 ```typescript
-import { StatusCode, isStatusCode, is5xx } from '@normality/status-code';
+import { StatusCode, isStatusCode, is5xx } from '@tselect/status-code';
 
 StatusCode.OK; // 200
 isStatusCode(200); // true

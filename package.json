@@ -1,19 +1,17 @@
 {
-  "name": "@normality/status-code",
+  "name": "@tselect/status-code",
   "scripts": {
-    "docs": "./node_modules/.bin/typedoc --out docs --mode file --excludePrivate --excludeExternals ./src/index.ts",
-    "test": "mocha",
-    "cov": "nyc mocha",
+    "test": "mocha -r ts-node/register 'test/**/*.test.ts'",
+    "cov": "nyc npm test",
     "lint": "tslint --project ./",
     "fix": "tslint --fix --project ./",
     "compile": "tsc",
     "build": "rm -rf dist && mkdir dist && tsc --noEmit false",
     "prepare": "tsc",
-    "prepublishOnly": "npm run lint && npm run cov && npm run build",
-    "travis": "tsc && npm run lint && npm run cov"
+    "prepublishOnly": "npm run lint && npm run cov && npm run build"
   },
   "license": "MIT",
-  "version": "4.0.4",
+  "version": "1.0.0",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "description": "HTTP status codes utility.",
@@ -22,29 +20,28 @@
     "url": "git+https://github.com/bluebirds-blue-jay/status-code.git"
   },
   "keywords": [
-    "bluejay",
+    "tselect",
     "http",
     "rest",
     "statuscode",
-    "code"
+    "code",
+    "typescript",
+    "enum"
   ],
   "author": "Sylvain Estevez",
   "bugs": {
-    "url": "https://github.com/SylvainEstevez/status-code"
+    "url": "https://github.com/tselect-npm/status-code"
   },
-  "homepage": "https://github.com/SylvainEstevez/status-code#readme",
-  "dependencies": {},
+  "homepage": "https://github.com/tselect-npm/status-code#readme",
   "devDependencies": {
-    "@types/chai": "^4.2.12",
+    "@types/chai": "^4.3.9",
     "@types/mocha": "5.2.3",
     "@types/node": "12.7.0",
-    "chai": "^4.2.0",
-    "inversify": "^4.3.0",
-    "mocha": "^5.2.0",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
     "nyc": "15.1.0",
-    "ts-node": "^9.0.0",
+    "ts-node": "^9.1.1",
     "tslint": "6.1.3",
-    "typedoc": "0.15.0",
-    "typescript": "^4.0.2"
+    "typescript": "^4.9.5"
   }
 }

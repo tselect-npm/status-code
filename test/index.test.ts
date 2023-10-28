@@ -1,17 +1,17 @@
 import { expect } from 'chai';
 
 import {
-  StatusCode,
   is1xx,
   is2xx,
   is3xx,
   is4xx,
   is5xx,
   isConsumerErrorStatusCode,
-  isServerErrorStatusCode,
-  isNonErrorStatusCode,
   isErrorStatusCode,
+  isNonErrorStatusCode,
+  isServerErrorStatusCode,
   isStatusCode,
+  StatusCode,
   toString
 } from '../src';
 
