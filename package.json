@@ -11,7 +11,7 @@
     "prepublishOnly": "npm run lint && npm run cov && npm run build"
   },
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "description": "HTTP status codes utility.",
