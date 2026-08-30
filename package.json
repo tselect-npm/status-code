@@ -34,7 +34,7 @@
     },
     "./package.json": "./package.json"
   },
-  "description": "HTTP status codes utility.",
+  "description": "HTTP status code enum, type guard and classifiers.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tselect-npm/status-code.git"
@@ -42,16 +42,21 @@
   "keywords": [
     "tselect",
     "http",
-    "rest",
+    "http-status",
+    "status-code",
     "statuscode",
+    "status",
+    "rest",
     "code",
+    "enum",
     "typescript",
-    "enum"
+    "esm",
+    "cjs"
   ],
   "author": "Sylvain Estevez",
   "packageManager": "pnpm@11.21.0",
   "bugs": {
-    "url": "https://github.com/tselect-npm/status-code"
+    "url": "https://github.com/tselect-npm/status-code/issues"
   },
   "homepage": "https://github.com/tselect-npm/status-code#readme",
   "devDependencies": {
