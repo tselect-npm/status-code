@@ -1,4 +1,4 @@
-import { StatusCode } from '../constants/status-code';
+import type { StatusCode } from '../constants/status-code';
 import { isStatusCode } from './is-status-code';
 
 export function isXXX(code: StatusCode, intChar: string): boolean {

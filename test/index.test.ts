@@ -12,6 +12,9 @@ import {
   isServerErrorStatusCode,
   isStatusCode,
   StatusCode,
+  // Imported under its real name; see the reasoning at the declaration in
+  // src/utils/to-string.ts.
+  // biome-ignore lint/suspicious/noShadowRestrictedNames: published export name, see above
   toString,
 } from '../src';
 

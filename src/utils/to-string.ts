@@ -8,6 +8,13 @@ import { StatusCode } from '../constants/status-code';
 // changes no behaviour: the lookup and the comparison are exactly as before.
 const REVERSE_MAPPED = StatusCode as unknown as Record<string, string | number>;
 
+// `toString` is this package's published export name and has been since 1.0.0.
+// Renaming it to satisfy the linter would break every consumer for a cosmetic
+// gain, and the rule's actual hazard — confusion with `Object.prototype.toString`
+// — does not apply to a named module export always reached through an explicit
+// import. Suppressed at the two sites that need it rather than switched off in
+// `biome.json`, so a genuine future shadowing is still reported.
+// biome-ignore lint/suspicious/noShadowRestrictedNames: published export name, see above
 export function toString(code: StatusCode): string | null {
   return Object.keys(StatusCode).find((key) => REVERSE_MAPPED[key] === code) || null;
 }
