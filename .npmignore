@@ -1,8 +1,0 @@
-test/
-node_modules/
-.idea/
-tsconfig.json
-*.ts
-!dist/**/*.d.ts
-!dist/**/*.js
-.nyc_output/
